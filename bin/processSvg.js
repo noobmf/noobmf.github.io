@@ -20,6 +20,7 @@ function optimize(svg,isOriginCode) {
     const plugins = [
         { convertShapeToPath: false },
         { mergePaths: false },
+        { convertPathData:false },
         { removeTitle: true },
     ]
     if(!isOriginCode){
